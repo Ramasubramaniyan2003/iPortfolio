@@ -556,24 +556,18 @@
       box-shadow: 0 30px 80px var(--shadow-heavy);
     }
 
-    .profile-img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 0 auto 20px;
-      border: 4px solid transparent;
-      background: var(--accent-gradient) border-box;
-      -webkit-mask:
-        linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
-      mask:
-        linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-      transition: var(--transition-smooth);
-    }
+   .profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 25px;
+  border: 4px solid transparent;
+  background: var(--accent-gradient);
+  padding: 4px;
+  box-sizing: border-box;
+  transition: var(--transition-smooth);
+}
 
     @media (min-width: 768px) {
       .profile-img {
@@ -1655,12 +1649,14 @@
       </div>
       <div class="about-grid">
         <div class="profile-card fade-in">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" class="profile-img" alt="Ramasubramaniyan" />
-          <h3>Senior Full Stack Developer</h3>
+<img src="./assets/img/image.png"
+     style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 0 auto 25px; border: 4px solid #007AFF;"
+     class="profile-img"
+     alt="Ramasubramaniyan" />          <h3>Full Stack Developer</h3>
           <p class="about-text">Specialized in MERN & PERN stack development with expertise in building scalable web applications.</p>
           <div class="social-links">
             <a href="https://www.linkedin.com/in/ramasubramaniyan-m-1aa112251/" class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/Ramasubramaniyan2003" class="social-link"><i class="fab fa-github"></i></a>
             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
             <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
           </div>
@@ -1674,42 +1670,42 @@
             <div class="info-item">
               <div class="info-icon"><i class="fas fa-birthday-cake"></i></div>
               <div>
-                <strong>Birthday:</strong><br>
+                <strong>Birthday:</strong>
                 <span>7 Jan 2003</span>
               </div>
             </div>
             <div class="info-item">
               <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
               <div>
-                <strong>Degree:</strong><br>
+                <strong>Degree:</strong>
                 <span>BE CSE</span>
               </div>
             </div>
             <div class="info-item">
               <div class="info-icon"><i class="fas fa-phone"></i></div>
               <div>
-                <strong>Phone:</strong><br>
+                <strong>Phone:</strong>
                 <span>+917010609871</span>
               </div>
             </div>
             <div class="info-item">
               <div class="info-icon"><i class="fas fa-envelope"></i></div>
               <div>
-                <strong>Email:</strong><br>
+                <strong>Email:</strong>
                 <span>cecsramasubramaniyan24@gmail.com</span>
               </div>
             </div>
             <div class="info-item">
               <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
               <div>
-                <strong>Location:</strong><br>
+                <strong>Location:</strong>
                 <span>Salem, TN, India</span>
               </div>
             </div>
             <div class="info-item">
               <div class="info-icon"><i class="fas fa-briefcase"></i></div>
               <div>
-                <strong>Freelance:</strong><br>
+                <strong>Freelance:</strong>
                 <span>Available</span>
               </div>
             </div>
@@ -1956,7 +1952,7 @@
           </div>
           <div class="social-links" style="justify-content: flex-start; margin-top: 2rem;">
             <a href="https://www.linkedin.com/in/ramasubramaniyan-m-1aa112251/" class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/Ramasubramaniyan2003" class="social-link"><i class="fab fa-github"></i></a>
             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/babu____.____/" class="social-link"><i class="fab fa-instagram"></i></a>
           </div>
@@ -2047,7 +2043,7 @@
 
     // Typing effect
     const typedTextSpan = document.querySelector('.typed-text');
-    const textArray = ['Senior Full Stack Developer', 'MERN Stack Expert', 'PERN Stack Specialist', 'Java Developer', 'Problem Solver'];
+    const textArray = ['Full Stack Developer', 'Problem Solver', 'Freelancer'];
     const typingDelay = 100;
     const erasingDelay = 50;
     const newTextDelay = 1500;
